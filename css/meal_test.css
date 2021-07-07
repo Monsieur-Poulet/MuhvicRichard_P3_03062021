@@ -71,8 +71,21 @@
     background: #99E2D0;
     color: white;
     border-radius: 0 15px 15px 0;
-    
     margin-right: -12px;
     height: 100%;
     width: 20%;
+    transform: scaleX(1);
+    transition-property: transform;
+    transition-duration: 1s;
+ }
+ .select:hover{
+    transform: scaleX(1.5);
+ }
+ .select i{
+    transform: rotate(360deg);
+    transition-property: transform;
+    transition-duration: 1s;
+ }
+ .select i:hover{
+     transform: rotate(0deg);
  }
