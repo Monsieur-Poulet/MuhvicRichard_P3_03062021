@@ -74,12 +74,12 @@
     margin-right: -12px;
     height: 100%;
     width: 20%;
-    transform: scaleX(1);
+    transform: scaleX(0.1);
     transition-property: transform;
     transition-duration: 1s;
  }
  .select:hover{
-    transform: scaleX(1.5);
+    transform: scaleX(1);
  }
  .select i{
     transform: rotate(360deg);
