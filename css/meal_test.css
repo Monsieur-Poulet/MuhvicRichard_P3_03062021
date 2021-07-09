@@ -65,7 +65,7 @@ strong{
 
 .select{
   position: absolute;
-  right: 0;
+  right: -90px;
   display: flex;
   z-index: 3;
   justify-content: center;
@@ -79,7 +79,6 @@ strong{
   height: 115px;
   width: 112px;
   transition-duration: 1s;
-  
 }
 .select:hover{
   transform: translateX(-100px);
