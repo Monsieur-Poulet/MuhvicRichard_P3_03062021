@@ -14,8 +14,9 @@
     display: flex;
     position: relative;
     align-items: center;
+    overflow: hidden;
     width: 50%;
-    height: 70px;
+    height: 90px;
     background-color: #F3F3F3;
     padding: 12px;
     border-radius: 15px;
@@ -24,18 +25,6 @@
     animation-name: fadeIn;
     animation-duration: 4s;
     transition: transform linear 4s;
-  }
-  strong{
-      position: absolute;
-      z-index: 2;
-      right: 150px;
-  }
-  .meal{
-    position: relative;
-    justify-content: flex-start;
-    left: 0;
-    align-items: center;
-    z-index: 1;
   }
   .meal_1{
     animation: fadeIn 1s;
@@ -60,32 +49,41 @@
       }
   }
 
- .select{
+strong{
     position: absolute;
-    z-index: 3;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    background: #99E2D0;
-    color: white;
-    border-radius: 0 15px 15px 0;
-    margin-right: -12px;
-    height: 100%;
-    width: 20%;
-    transform: scaleX(0.1);
-    transition-property: transform;
-    transition-duration: 1s;
- }
- .select:hover{
-    transform: scaleX(1);
- }
- .select i{
-    transform: rotate(360deg);
-    transition-property: transform;
-    transition-duration: 1s;
- }
- .select i:hover{
-     transform: rotate(0deg);
- }
+    z-index: 2;
+    right: 150px;
+}
+.meal{
+  position: relative;
+  justify-content: flex-start;
+  left: 0;
+  align-items: center;
+  z-index: 1;
+}
+
+
+.select{
+  position: absolute;
+  right: 0;
+  display: flex;
+  z-index: 3;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  background: #99E2D0;
+  opacity: 0.5;
+  color: white;
+  border-radius: 0 15px 15px 0;
+  margin-right: -12px;
+  height: 115px;
+  width: 112px;
+  transition-duration: 1s;
+  
+}
+.select:hover{
+  transform: translateX(-100px);
+}
+.select i{
+  
+}
