@@ -55,19 +55,33 @@
   width: 75%;
   justify-content: flex-start;
   align-items: center;
+  white-space: nowrap;
+}
+
+.card:hover .suspension_point{
+  overflow: visible;
+  transform: translateX(-100px);
+  width: auto;
+}
+.suspension_point{
+  overflow: hidden;
+  width: 0%;
+  transition-property: transform;
+  transition-duration: 0.5s;
 }
 
 .card:hover .price{
-  justify-content: flex-end;
-  transform: translateX(-50px)
+  transform: translateX(-100px);
+  width: 0%;
 }
 .price{  
-  display: flex;
+  display: inline;
   justify-content: center;
   width: 25%;
   transition-property: transform;
   transition-duration: 0.5s;
 }
+
 .card:hover .select{
   width: 20%;
   transform: translateX(0px);
