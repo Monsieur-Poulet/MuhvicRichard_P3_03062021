@@ -26,6 +26,9 @@
   animation-duration: 4s;
   transition: transform linear 4s;
 }
+.card:hover{
+  cursor: pointer;
+}
 .meal_1{
   animation: fadeIn 1s;
 }
@@ -55,6 +58,7 @@
 }
 
 .card:hover .price{
+  justify-content: flex-end;
   transform: translateX(-50px)
 }
 .price{  
@@ -62,7 +66,7 @@
   justify-content: center;
   width: 25%;
   transition-property: transform;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 .card:hover .select{
   width: 20%;
@@ -81,5 +85,5 @@
   width: 0%;
   transition-property: transform;
   transform: translateX(150px);
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
