@@ -58,34 +58,31 @@
   white-space: nowrap;
 }
 
-.card:hover .suspension_point{
-  overflow: visible;
-  transform: translateX(-100px);
-  width: auto;
-}
 .suspension_point{
   overflow: hidden;
   width: 0%;
   transition-property: transform;
   transition-duration: 0.5s;
 }
-
-.card:hover .price{
+.card:hover .suspension_point{
+  overflow: visible;
   transform: translateX(-100px);
-  width: 0%;
+  width: auto;
 }
+
 .price{  
   display: inline;
   justify-content: center;
+  align-items: center;
   width: 25%;
   transition-property: transform;
   transition-duration: 0.5s;
 }
-
-.card:hover .select{
+.card:hover .price{
+  transform: translateX(-100px);
   width: 20%;
-  transform: translateX(0px);
 }
+
 .select{
   display: flex;
   justify-content: center;
@@ -100,4 +97,8 @@
   transition-property: transform;
   transform: translateX(150px);
   transition-duration: 0.5s;
+}
+.card:hover .select{
+  width: 20%;
+  transform: translateX(0px);
 }
