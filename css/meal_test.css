@@ -48,21 +48,25 @@
     transform: translateY(0px);
   }
 }
-
-.price{  
-  display: flex;
-  justify-content: center;
-  width: 25%;
-}
 .meal{
   width: 75%;
   justify-content: flex-start;
   align-items: center;
 }
 
+.card:hover .price{
+  transform: translateX(-50px)
+}
+.price{  
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  transition-property: transform;
+  transition-duration: 1s;
+}
 .card:hover .select{
   width: 20%;
-  
+  transform: translateX(0px);
 }
 .select{
   display: flex;
@@ -75,4 +79,7 @@
   margin-right: -12px;
   height: 115px;
   width: 0%;
+  transition-property: transform;
+  transform: translateX(150px);
+  transition-duration: 1s;
 }
