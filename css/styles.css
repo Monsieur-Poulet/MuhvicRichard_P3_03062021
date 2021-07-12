@@ -181,6 +181,7 @@ header p{
     color: black;
     text-decoration: none;
     display: flex;
+    position: relative;
     flex-direction: column;
     border-radius: 20px;
     width: 70%;
@@ -198,7 +199,18 @@ header p{
     background-color: #f5edff;
     box-shadow: 5px 5px 10px rgba(85, 85, 85, 0.671);
 }
+.carte_2 h3{
+    font-size: 0.8em;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: #99E2D0;
+    color: #0e8f70;
+    box-shadow: 1px 1px 5px rgba(156, 156, 156, 0.562);
+    padding: 5px;
+}
 .sous_carte_2{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -211,8 +223,27 @@ header p{
 .titre_restaurant p{
     margin-top: 5px;
 }
-.sous_carte_2 i{
+
+.icon_heart{
+    display: flex;
+    align-items: center;
+}
+.empty_heart{
+    position: absolute;
+    right: 0;
+    z-index: 1;
     font-size: 1.5em;
+}
+.full_heart{
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    font-size: 1.5em;
+}
+.icon_heart:hover .full_heart{
+    display: flex;
+    background-clip: linear-gradient(0deg, #9356DC, #FF79DA);
 }
 
 /*---FOOTER---*/
