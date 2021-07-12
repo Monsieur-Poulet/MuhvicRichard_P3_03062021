@@ -1,0 +1,36 @@
+.chargement{
+    display:  flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #9356DC;
+}
+.chargement i{ 
+    font-size: 2em;
+    animation-name: spin;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin{
+    0% {
+        transform:rotate(0deg);
+        opacity: 0.1;
+    }
+    50% {
+        transform: rotate(180deg);
+        opacity: 1;
+    }
+    100% {
+        transform:rotate(360deg);
+        opacity: 0.1;
+    }
+}
