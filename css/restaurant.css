@@ -3,7 +3,7 @@ body{
 }
 h1{
     font-family: 'Shrikhand', cursive;
-    font-size: 1.4em;
+    font-size: 1.6em;
     font-weight: 500;
     margin: 0;
     
@@ -11,7 +11,7 @@ h1{
 h2{
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
-    font-size: 0.9em;
+    font-size: 1.2em;
     font-weight: 300;
     margin: 0;
     padding-bottom: 5px;
@@ -27,19 +27,19 @@ h2::before{
 }
 h3{
     font-family: 'Roboto', sans-serif;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 600;
     margin: 0 0 5px 0;
 }
 p, li{
     font-family: 'Roboto', sans-serif;
-    font-size: 0.9em;
+    font-size: 1.1em;
     font-weight: 300;
     margin: 0;
 }
-span{
+button{
     font-family: 'Roboto', sans-serif;
-    font-size: 0.9em;
+    font-size: 1.1em;
     font-weight: 500;
 }
 
@@ -94,20 +94,61 @@ header{
     align-items: center;
     margin: 20px 0 0 0;
 }
-.menu_name i{
+.menu_name i{;
     color: black;
-    font-size: 1.8em;
+    font-size: 1.6em;
 }
+
+
+.icon_heart{
+    position: relative;
+    display: flex;
+    align-items: center;
+    animation-name: updateColorOpacity;
+    animation-duration: ease-in-out 0.5s;
+}
+.empty_heart{
+    position: absolute;
+    z-index: 1;
+}
+.full_heart{
+    position: absolute;
+    z-index: 2;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+.icon_heart:hover .full_heart, .icon_heart:hover .empty_heart{
+    cursor: pointer;
+    background: -webkit-gradient(linear,left top,left bottom,from(#9356DC),to(#FF79DA));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+@keyframes updateColorOpacity{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/*---MENUS---*/
 .main_card{
     width: 90%;
     margin: 15px 0 15px 0;
 }
 .card{
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: flex-end;
+    overflow: hidden;
+    width: 100%;
+    height: 90px;
     background-color: white;
-    padding: 12px;
+    padding: 0 0 0 12px;
     border-radius: 15px;
     margin: 10px 0 10px 0;
     box-shadow: 5px 5px 10px rgba(156, 156, 156, 0.233);
@@ -115,29 +156,94 @@ header{
     animation-duration: 4s;
     transition: transform linear 4s;
 }
+.card:hover{
+    cursor: pointer;
+}
 .meal_1{
     animation: fadeIn 1s;
-  }
-  .meal_2{
+}
+.meal_2{
     animation: fadeIn 2s;
-  }
-  .meal_3{
+}
+.meal_3{
     animation: fadeIn 3s;
-  }
-  .meal_4{
+}
+.meal_4{
     animation: fadeIn 4s;
-  }
-  @keyframes fadeIn {
-      from{
-          opacity: 0;
-          transform: translateY(30px);
-      }
-      to{
-          opacity: 1;
-          transform: translateY(0px);
-      }
-  }
-  
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.meal{
+    width: 75%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+.card:hover .meal{
+    white-space: nowrap;
+    width: 55%;
+}
+.card:hover .meal h3, .card:hover .meal p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.price{  
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: auto;
+    width: 25%;
+}
+.card:hover .price{
+    width: 20%;
+}
+.price p{
+    display: flex;
+    height: auto;
+    justify-content: center;
+}
+
+.select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    background: #99E2D0;
+    color: white;
+    border-radius: 0 15px 15px 0;
+    height: 90px;
+    width: 0%;
+    transition: all 0.5s; 
+}
+.card:hover .select{
+    width: 20%;
+}
+
+.circle i{
+    display: flex;
+    justify-content: center;
+}
+.circle{
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+.card:hover .circle{
+    transform: rotate(1turn);
+    transform-origin: center;
+}
+
+
 .main_card a{
     text-decoration: none;
     color: black;
@@ -151,6 +257,8 @@ header{
     flex-direction: column;
     justify-content: flex-start;
 }
+
+
 button{
     color: white;
     background: linear-gradient(0deg, #9356DC, #FF79DA) ;
