@@ -104,8 +104,6 @@ header{
     position: relative;
     display: flex;
     align-items: center;
-    animation-name: updateColorOpacity;
-    animation-duration: ease-in-out 0.5s;
 }
 .empty_heart{
     position: absolute;
@@ -126,13 +124,15 @@ header{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
+    transform: opacity(0);
+    animation: updateColorOpacity 0.3s;
 }
 @keyframes updateColorOpacity{
     from{
-        opacity: 0;
+        transform: opacity(0);
     }
     to{
-        opacity: 1;
+        transform: opacity(1);
     }
 }
 /*---MENUS---*/
