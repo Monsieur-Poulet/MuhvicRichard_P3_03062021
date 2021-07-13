@@ -1,36 +1,94 @@
+/*---LOADING SPINNER---*/
+.chargement{
+    position: fixed;
+    z-index: 5;
+    justify-content: center;
+    background: white;
+    width: 100%;
+    height: 100%;
+    display:  flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #9356DC;
+    animation-name: loading;
+    animation-duration: 3000ms;
+    animation-iteration-count: 1;
+}
+@keyframes loading{
+    0%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.chargement i{ 
+    font-size: 2em;
+    animation-name: spin;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes spin{
+    0% {
+        transform:rotate(0deg);
+        opacity: 0.1;
+    }
+    50% {
+        transform: rotate(180deg);
+        opacity: 1;
+    }
+    100% {
+        transform:rotate(360deg);
+        opacity: 0.1;
+    }
+}
 
 
-/*# sourceMappingURL=accueil.css.map */
+/*-------------------*/
+/*---CORPS DU SITE---*/
+/*-------------------*/
 body{
     margin: 0;
 }
 h1{
     /* font-family: 'Shrikhand', cursive; */
     font-family: 'Roboto', sans-serif;
-    font-size: 1.4em;
+    font-size: 1.6em;
     font-weight: 600;
     margin: 0;
 }
 h2{
     font-family: 'Roboto', sans-serif;
-    font-size: 0.8em;
+    font-size: 1.2em;
     font-weight: 600;
     margin: 0;
 }
 h3, input{
     font-family: 'Roboto', sans-serif;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 500;
 }
 p, li{
     font-family: 'Roboto', sans-serif;
-    font-size: 0.9em;
+    font-size: 1.1em;
     font-weight: 300;
     margin: 0;
 }
 button{
     font-family: 'Roboto', sans-serif;
-    font-size: 0.9em;
+    font-size: 1.1em;
     font-weight: 500;
 }
 /*---HEADER---*/
