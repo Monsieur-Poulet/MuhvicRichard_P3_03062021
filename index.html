@@ -13,9 +13,8 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="chargement">
-        <p>Chargement...</p>
-        <i class="fas fa-circle-notch"></i>
+    <div class="loading_spinner">
+        <img src="images/logo/ohmyfood.png" alt="logo">
     </div>
 
     <header>    
@@ -33,38 +32,40 @@
 
     <section class="fonctionnement">
         <h1>Fonctionnement</h1>
-        <a href="#" class="carte_1">
-            <div class="sous_carte_1">
-                <div class="numero">
-                    <p>1</p>
+        <div class="main_card">
+            <a href="#" class="carte_1">
+                <div class="sous_carte_1">
+                    <div class="numero">
+                        <p>1</p>
+                    </div>
+                    <i class="fas fa-mobile-alt"></i>
+                    <h2>Choisissez un restaurant</h2>
                 </div>
-                <i class="fas fa-mobile-alt"></i>
-                <h2>Choisissez un restaurant</h2>
-            </div>
-        </a>
-        <a href="#" class="carte_1">
-            <div class="sous_carte_1">
-                <div class="numero">
-                    <p>2</p>
+            </a>
+            <a href="#" class="carte_1">
+                <div class="sous_carte_1">
+                    <div class="numero">
+                        <p>2</p>
+                    </div>
+                    <i class="fas fa-list-ul"></i>
+                    <h2>Composez votre menu</h2>
                 </div>
-                <i class="fas fa-list-ul"></i>
-                <h2>Composez votre menu</h2>
-            </div>
-        </a>
-        <a href="#" class="carte_1">
-            <div class="sous_carte_1">
-                <div class="numero">
-                    <p>3</p>
+            </a>
+            <a href="#" class="carte_1">
+                <div class="sous_carte_1">
+                    <div class="numero">
+                        <p>3</p>
+                    </div>
+                    <i class="fas fa-store"></i>
+                    <h2>Dégustez au restaurant</h2>
                 </div>
-                <i class="fas fa-store"></i>
-                <h2>Dégustez au restaurant</h2>
-            </div>
-        </a>
+            </a>
+        </div>
     </section>
     
     <section class="restaurant">
         <h1>Restaurants</h1>
-        <a href="menu_1.html" class="carte_2">
+        <a href="pages/ALaFrançaise.html" class="carte_2">
             <img src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
             <div><h3>Nouveau</h3></div>
             <div class="sous_carte_2">
@@ -73,16 +74,16 @@
                     <p>Ménilmontant</p>
                 </div>
                 <div class="icon_heart">
-                    <div class="empty_heart">
+                    <div class="regular_heart">
                         <i class="far fa-heart"></i>
                     </div>
-                    <div class="full_heart">
+                    <div class="solid_heart">
                         <i class="fas fa-heart"></i>
                     </div>
                 </div>
             </div>
         </a>
-        <a href="menu_2.html" class="carte_2">
+        <a href="pages/LaNoteEnchantee.html" class="carte_2">
             <img src="../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
             <div><h3>Nouveau</h3></div>
             <div class="sous_carte_2">
@@ -91,16 +92,16 @@
                     <p>Charonne</p>
                 </div>
                 <div class="icon_heart">
-                    <div class="empty_heart">
+                    <div class="regular_heart">
                         <i class="far fa-heart"></i>
                     </div>
-                    <div class="full_heart">
+                    <div class="solid_heart">
                         <i class="fas fa-heart"></i>
                     </div>
                 </div>
             </div>
         </a>
-        <a href="menu_3.html" class="carte_2">
+        <a href="pages/LaPaletteDuGout.html" class="carte_2">
             <img src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
             <div class="sous_carte_2">
                 <div class="titre_restaurant">
@@ -108,16 +109,16 @@
                     <p>Cité Rouge</p>
                 </div>
                 <div class="icon_heart">
-                    <div class="empty_heart">
+                    <div class="regular_heart">
                         <i class="far fa-heart"></i>
                     </div>
-                    <div class="full_heart">
+                    <div class="solid_heart">
                         <i class="fas fa-heart"></i>
                     </div>
                 </div>
             </div>
         </a>
-        <a href="menu_4.html" class="carte_2">
+        <a href="pages/LesDelicesDesSens.html" class="carte_2">
             <img src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
             <div class="sous_carte_2">
                 <div class="titre_restaurant">
@@ -125,10 +126,10 @@
                     <p>Folie-Méricourt</p>
                 </div>
                 <div class="icon_heart">
-                    <div class="empty_heart">
+                    <div class="regular_heart">
                         <i class="far fa-heart"></i>
                     </div>
-                    <div class="full_heart">
+                    <div class="solid_heart">
                         <i class="fas fa-heart"></i>
                     </div>
                 </div>
@@ -142,7 +143,7 @@
             <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
             <li><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
             <li><a href="#">Mentions légales</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#"><form>Contact</form></a></li>
         </ul>
     </footer>
 </body>
