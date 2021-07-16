@@ -1,3 +1,10 @@
+
+
+
+
+
+
+/*---CORPS DU SITE WEB---*/
 body{
     margin: 0;
 }
@@ -28,12 +35,12 @@ h2::before{
 h3{
     font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
-    font-weight: 600;
+    font-weight: 500;
     margin: 0 0 5px 0;
 }
 p, li{
     font-family: 'Roboto', sans-serif;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 300;
     margin: 0;
 }
@@ -89,7 +96,7 @@ header{
 }
 .menu_name{
     display: flex;
-    width: 90%;
+    width: 80%;
     justify-content: space-between;
     align-items: center;
     margin: 20px 0 0 0;
@@ -105,40 +112,50 @@ header{
     display: flex;
     align-items: center;
 }
-.empty_heart{
-    position: absolute;
-    z-index: 1;
-}
-.full_heart{
+.regular_heart{
     position: absolute;
     z-index: 2;
-    background-clip: text;
+}
+.solid_heart{
+    position: absolute;
+    z-index: 1;
+    display: none;
+    transition: all 0.5s;
+}
+.icon_heart:hover .solid_heart{
+    display: block;
+    background: linear-gradient(0deg, #9356DC, #FF79DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: transparent;
+    animation: heart;
+    animation-duration: 0.5s;
 }
-.icon_heart:hover .full_heart, .icon_heart:hover .empty_heart{
-    cursor: pointer;
-    background: -webkit-gradient(linear,left top,left bottom,from(#9356DC),to(#FF79DA));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    transform: opacity(0);
-    animation: updateColorOpacity 0.3s;
-}
-@keyframes updateColorOpacity{
+@keyframes heart {
     from{
-        transform: opacity(0);
+        opacity: 0;
     }
     to{
-        transform: opacity(1);
+        opacity: 1;
     }
 }
+
+
 /*---MENUS---*/
-.main_card{
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 90%;
-    margin: 15px 0 15px 0;
+}
+
+.main_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: 15px;
 }
 .card{
     display: flex;
