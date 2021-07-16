@@ -274,6 +274,9 @@ header p{
     background-color: #f5edff;
     box-shadow: 5px 5px 10px rgba(85, 85, 85, 0.671);
 }
+.carte_2:hover h2, .carte_2:hover p, .carte_2:hover .regular_heart{
+    color: #9356DC;
+}
 .carte_2 h3{
     font-size: 0.8em;
     position: absolute;
