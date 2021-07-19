@@ -286,7 +286,7 @@ header{
 }
 
 
-button{
+.btn{
     color: white;
     background: linear-gradient(0deg, #9356DC, #FF79DA) ;
     padding: 13px 50px 13px 50px;
@@ -297,11 +297,9 @@ button{
     transform: scale(1);
     transition: all 0.2s;
 }
-button a{
-    color: white;
-    text-decoration: none;
-}
-button:hover{
+
+.btn:hover{
+    cursor: pointer;
     transform: scale(1.15);
     color: white;
     box-shadow: 5px 5px 10px rgba(56, 56, 56, 0.473);
@@ -314,7 +312,7 @@ footer{
 }
 footer img{
     filter: invert(100%);
-    width: 25%;
+    max-width: 25%;
     padding-left: 40px;
 }
 footer ul li{
