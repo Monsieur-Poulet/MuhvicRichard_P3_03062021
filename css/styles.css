@@ -129,7 +129,6 @@ input{
 :placeholder-shown{
     border-radius: 0px;
     background: none;
-    border-color: none;
 }
 .exploration{
     display: flex;
@@ -180,6 +179,12 @@ header p{
     margin: 40px 0 40px 0;
     width: 100%;
 }
+.fonctionnement h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6em;
+    font-weight: 600;
+    margin: 0;
+}
 .main_card{
     display: flex;
     flex-direction: column;
@@ -226,6 +231,9 @@ header p{
     align-items: center;
     width: 80%;
 }
+.sous_carte_1 h2{
+    font-weight: 500;
+}
 .numero{
     display: flex;
     justify-content: center;
@@ -263,6 +271,12 @@ header p{
     background-color: #f6f6f6;
     margin: 40px 0 0 0;
     padding: 40px 0 40px 0;
+}
+.restaurant h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6em;
+    font-weight: 600;
+    margin: 0;
 }
 .carte_2{
     color: black;
