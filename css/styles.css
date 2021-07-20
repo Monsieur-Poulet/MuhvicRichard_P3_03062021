@@ -324,6 +324,11 @@ header p{
     display: flex;
     flex-direction: column;
 }
+.titre_restaurant h2{
+    font-size: 1.2em;
+    font-weight: 500;
+
+}
 .titre_restaurant p{
     margin-top: 5px;
 }
